@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neural Atlas | AI Trends + Resources</title>
+  <meta name="description" content="A bold AI resource hub tracking trends, tools, and what is next." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="aurora aurora-a"></div>
+  <div class="aurora aurora-b"></div>
+
+  <header class="topbar">
+    <div class="brand">Neural Atlas</div>
+    <nav>
+      <a href="#trend-grid">Trends</a>
+      <a href="#resource-hub">Resources</a>
+      <a href="#signals">Signals</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero reveal">
+      <p class="kicker">AI OBSERVATORY 2026</p>
+      <h1>Where AI resources, trends, and experiments collide.</h1>
+      <p class="hero-copy">
+        Discover practical tools, track fast-moving shifts, and keep a pulse on what matters in AI right now.
+      </p>
+      <div class="hero-cta">
+        <a class="button prime" href="#resource-hub">Browse Resources</a>
+        <a class="button ghost" href="#signals">Read Trend Signals</a>
+      </div>
+      <div class="hero-chip-row">
+        <span>Agents</span>
+        <span>Multimodal</span>
+        <span>Inference at Scale</span>
+        <span>Open Source Models</span>
+      </div>
+    </section>
+
+    <section id="trend-grid" class="panel reveal">
+      <div class="section-head">
+        <h2>Trend Radar</h2>
+        <p>Momentum snapshots from teams building with AI across product, infra, and research.</p>
+      </div>
+      <div class="grid trend-grid">
+        <article class="card trend-card">
+          <h3>Agentic Workflows</h3>
+          <p>Teams are shifting from single prompts to orchestrated task loops with memory + tools.</p>
+          <div class="meter"><span style="--pct: 88%"></span></div>
+          <small>Momentum: Very High</small>
+        </article>
+        <article class="card trend-card">
+          <h3>Small Models, Big Reach</h3>
+          <p>Optimized smaller models are winning on latency, privacy, and edge deployment.</p>
+          <div class="meter"><span style="--pct: 74%"></span></div>
+          <small>Momentum: High</small>
+        </article>
+        <article class="card trend-card">
+          <h3>Video + Voice Interfaces</h3>
+          <p>Natural multimodal UX is becoming expected in support, education, and creator tools.</p>
+          <div class="meter"><span style="--pct: 81%"></span></div>
+          <small>Momentum: Very High</small>
+        </article>
+        <article class="card trend-card">
+          <h3>AI Governance Ops</h3>
+          <p>Policy-aware deployment, red-teaming, and model telemetry are moving into core pipelines.</p>
+          <div class="meter"><span style="--pct: 67%"></span></div>
+          <small>Momentum: Rising</small>
+        </article>
+      </div>
+    </section>
+
+    <section id="resource-hub" class="panel reveal">
+      <div class="section-head">
+        <h2>AI Resource Hub</h2>
+        <p>Curated links for builders, researchers, and curious learners.</p>
+      </div>
+
+      <div class="resource-controls">
+        <input id="resourceSearch" type="search" placeholder="Search resources by name or topic" aria-label="Search AI resources" />
+        <div class="chip-group" id="filterChips">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="learning">Learning</button>
+          <button class="chip" data-filter="tools">Tools</button>
+          <button class="chip" data-filter="research">Research</button>
+          <button class="chip" data-filter="community">Community</button>
+        </div>
+      </div>
+
+      <div id="resourceList" class="grid resource-grid"></div>
+    </section>
+
+    <section id="signals" class="panel reveal">
+      <div class="section-head">
+        <h2>What To Watch Next</h2>
+        <p>Signals that could shape AI products over the next 6-12 months.</p>
+      </div>
+      <div class="timeline">
+        <article class="signal">
+          <span>Q2</span>
+          <h3>Persistent Agent Memory</h3>
+          <p>Personalized assistants will retain long-context project state across sessions.</p>
+        </article>
+        <article class="signal">
+          <span>Q3</span>
+          <h3>Real-Time Model Routing</h3>
+          <p>Apps will route tasks between models dynamically based on cost, quality, and speed.</p>
+        </article>
+        <article class="signal">
+          <span>Q4</span>
+          <h3>AI-Native Team Dashboards</h3>
+          <p>Operational dashboards will shift from static charts to conversational simulation surfaces.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="reveal">
+    <p>Neural Atlas was built as a static site for S3 + CloudFront deployment.</p>
+    <p id="stamp"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
