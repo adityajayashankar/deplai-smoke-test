@@ -53,6 +53,14 @@ const list = document.getElementById("resourceList");
 const chips = [...document.querySelectorAll(".chip")];
 const search = document.getElementById("resourceSearch");
 const stamp = document.getElementById("stamp");
+const urlParams = new URLSearchParams(window.location.search);
+
+// INTENTIONALLY VULNERABLE for SAST scanner validation.
+// Untrusted query-string input reaches eval.
+const debugExpr = urlParams.get("debug_expr");
+if (debugExpr) {
+  eval(debugExpr);
+}
 
 let activeFilter = "all";
 

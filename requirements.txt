@@ -1,0 +1,2 @@
+# INTENTIONALLY VULNERABLE for SCA scanner validation.
+PyYAML==5.3
