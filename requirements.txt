@@ -1,2 +1,2 @@
-# INTENTIONALLY VULNERABLE for SCA scanner validation.
-PyYAML==5.4
+# Updated PyYAML to a secure version to address CWE-434: Unrestricted Upload of File with Dangerous Type vulnerability
+PyYAML==6.0
