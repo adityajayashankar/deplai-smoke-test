@@ -1,0 +1,7 @@
+project_name = "deplai-smoke-test"
+environment = "dev"
+region = "eu-north-1"
+compute_strategy = "ec2"
+team = "platform-engineering"
+cost_center = "engineering"
+secrets_manager_prefix = "/deplai-smoke-test/dev"
